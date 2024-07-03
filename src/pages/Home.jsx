@@ -3,6 +3,11 @@ import Header from "../components/Header";
 import Content from "../components/Content";
 import HeroSection from "../components/HeroSection";
 import Portfolio from "../components/Portfolio";
+import CallToAction from "../components/CallToAction";
+import Blog from "../components/Blog";
+import UserInfo from "../components/UserInfo";
+import Footer from "../components/Footer";
+import Testimonail from "../components/Testimonail";
 
 const Home = () => {
   return (
@@ -11,6 +16,11 @@ const Home = () => {
       <HeroSection />
       <Content />
       <Portfolio />
+      <CallToAction />
+      <Blog />
+      <UserInfo />
+      <Testimonail />
+      <Footer />
     </div>
   );
 };

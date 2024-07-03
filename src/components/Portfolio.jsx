@@ -41,8 +41,8 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div className="bg-white">
-      <div className="lg:max-w-4xl mx-auto  py-14">
+    <div className="bg-white py-14">
+      <div className="lg:max-w-4xl mx-auto md:w-full">
         <div className="text-center p-6">
           <h1 className="text-2xl font-bold">Portfolio</h1>
           <p className="py-4 text-sm text-lightGrey">
@@ -50,7 +50,7 @@ const Portfolio = () => {
             fugiat enim similique <br /> necessitatibus dignissimos aspernatur.
           </p>
         </div>
-        <div className="cardWrapper w-[100%] block md:flex md:flex-wrap md:justify-center md:items-center">
+        <div className="cardWrapper block md:flex md:flex-wrap md:justify-center md:items-center">
           {cardArray.map((card, idx) => (
             <Card card={card} key={idx} />
           ))}
@@ -71,15 +71,13 @@ export default Portfolio;
 const Card = ({ card }) => {
   return (
     <div>
-      <div className="w-[250px] mx-auto md:m-1 border-[1px] rounded-md mt-4 ">
+      <div className="w-[298px] mx-auto border-[1px] rounded-md mt-4 ">
         <div className="cardImg">
           <img src={card.image} alt="" />
         </div>
         <div className="cardDescription p-4">
           <p className="text-[12px] text-lightGrey">{card.tool}</p>
-          <h1 className="text-[12px] text-lightGrey font-bold">
-            {card.component}
-          </h1>
+          <h1 className="text-[14px]  font-bold">{card.component}</h1>
           <p className="text-[12px] text-lightGrey py-2">{card.description}</p>
           <button className="flex items-center border-[1px] px-4 py-2 border-primary text-primary rounded-sm font-semibold gap-x-2">
             <span>Case Study</span> <FiArrowRight />
