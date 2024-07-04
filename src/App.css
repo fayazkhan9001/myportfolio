@@ -10,6 +10,10 @@
   --text-color: #556070;
 }
 
+.slick-slide > div {
+  margin: 0 6px;
+}
+
 .card {
   background: #ffff;
   margin: 8px;

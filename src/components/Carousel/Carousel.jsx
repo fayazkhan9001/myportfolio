@@ -21,13 +21,13 @@ const Carousel = ({ slides }) => {
     }
   };
   return (
-    <div className="overflow-hidden relative ">
+    <div className="overflow-hidden ">
       <div
         className="flex transition ease-in-out duration-300"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+        style={{ transform: `translateX(-${current * 25}%)` }}
       >
-        {slides.map((c, i) => (
-          <img key={i} src={c} />
+        {slides.map((data, i) => (
+          <BlogCard data={data} />
         ))}
       </div>
 
@@ -60,3 +60,21 @@ const Carousel = ({ slides }) => {
 };
 
 export default Carousel;
+
+const BlogCard = ({ data }) => {
+  return (
+    <div className="cardWrapper">
+      <div className="mx-1 w-[217px] border-[1px] rounded-md hover:shadow-lg">
+        <div className="">
+          <img className="rounded-t-md" src={data.image} alt="" />
+        </div>
+        <div className="p-2 text-sm">
+          <p className="text-lightGrey py-1">
+            {data.date}/{data.comment}
+          </p>
+          <p>{data.description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
