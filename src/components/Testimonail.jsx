@@ -56,12 +56,12 @@ const Testimonail = () => {
     <div>
       <div className="text-center py-8 ">
         <h1 className="text-2xl font-bold">Testimonial</h1>
-        <p className="py-4 text-sm text-lightGrey">
+        <p className="py-6 text-sm text-lightGrey">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
           fugiat enim similique <br /> necessitatibus dignissimos aspernatur.
         </p>
 
-        <p>
+        <p className="pt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           eaque, quam ipsa reiciendis quibusdam voluptates odio magni quod et a
           corrupti provident autem facere, fugiat dolorum. Ex minima placeat
