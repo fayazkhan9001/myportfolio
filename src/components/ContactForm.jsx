@@ -28,7 +28,7 @@ const ContactForm = () => {
     },
   ];
   return (
-    <div className="border-2 p-14 lg:w-[900px] rounded-xl shadow-lg absolute bottom-[-40px] left-50 bg-white box-border">
+    <div className="border-2 p-10 md:p-14 lg:w-[900px] rounded-xl shadow-lg absolute bottom-[-60px] md:bottom-[-40px] left-50 bg-white box-border">
       <div className="block md:flex justify-between ">
         <div className="formWrapper w-full md:w-[40%]">
           <div>

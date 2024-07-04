@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
+import CarouselTestimonail from "./Carousel/CarouselTestimonail";
 
 const Clients = () => {
   const testArr = [
@@ -61,13 +62,9 @@ const Testimonail = () => {
           fugiat enim similique <br /> necessitatibus dignissimos aspernatur.
         </p>
 
-        <p className="pt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          eaque, quam ipsa reiciendis quibusdam voluptates odio magni quod et a
-          corrupti provident autem facere, fugiat dolorum. Ex minima placeat
-          odit ipsa. Obcaecati voluptatem eos minima molestiae dolorum itaque
-          quod modi!
-        </p>
+        <div>
+          <CarouselTestimonail />
+        </div>
       </div>
     </div>
   );
