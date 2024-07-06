@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import CarouselTestimonail from "./Carousel/CarouselTestimonail";
+import CarouselTestimonial from "./Carousel/CarouselTestimonial";
 
 const Clients = () => {
   const testArr = [
@@ -25,7 +25,7 @@ const Clients = () => {
   ];
   return (
     <div className="py-10 relative">
-      <div className="lg:max-w-4xl mx-auto md:w-full h-[1800px] md:h-[1100px]">
+      <div className="lg:max-w-4xl mx-auto md:w-full h-[1700px] md:h-[1100px]">
         <div className="text-center relative ">
           <h1 className="text-2xl font-bold">Happy Clients</h1>
           <p className="py-4 text-sm text-lightGrey">
@@ -43,7 +43,7 @@ const Clients = () => {
             ))}
           </ul>
         </div>
-        <Testimonail />
+        <Testimonial />
         <ContactForm />
       </div>
     </div>
@@ -52,7 +52,7 @@ const Clients = () => {
 
 export default Clients;
 
-const Testimonail = () => {
+const Testimonial = () => {
   return (
     <div>
       <div className="text-center py-8 ">
@@ -63,7 +63,7 @@ const Testimonail = () => {
         </p>
 
         <div>
-          <CarouselTestimonail />
+          <CarouselTestimonial />
         </div>
       </div>
     </div>

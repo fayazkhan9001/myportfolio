@@ -39,7 +39,7 @@ const Blog = () => {
     ],
   };
   return (
-    <div className="w-3/4 m-auto py-6">
+    <div className="lg:max-w-4xl lg:mx-auto md:max-full w-full m-auto py-6">
       <div className="text-center w-full md:w-2/4 m-auto pt-6">
         <h1 className="text-2xl font-bold py-4">Blog</h1>
         <p className="text-sm text-lightGrey">
@@ -50,16 +50,16 @@ const Blog = () => {
       <div className="my-10">
         <Slider {...settings}>
           {data.map((d, i) => (
-            <div key={i} className=" rounded-lg border-[1px] hover:shadow-lg">
+            <div key={i} className="rounded-lg border-[1px] hover:shadow-lg">
               <div>
-                <img className="rounded-t-lg" src={d.image} />
+                <img className="rounded-t-lg w-[100%]" src={d.image} />
               </div>
 
               <div className="p-2">
                 <p className="text-[12px] text-lightGrey">
                   {d.date} / {d.comment}
                 </p>
-                <p className="text-sm">{d.description}</p>
+                <p className="text-md pt-1">{d.description}</p>
               </div>
             </div>
           ))}
@@ -76,24 +76,24 @@ const data = [
     image: "blog1.png",
     date: Date.now(),
     comment: "246 comments",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Lorem ipsum dolor sit amet consectetur.",
   },
   {
     image: "blog2.png",
     date: Date.now(),
     comment: "246 comments",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Lorem ipsum dolor sit amet consectetur.",
   },
   {
     image: "blog3.png",
     date: Date.now(),
     comment: "246 comments",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Lorem ipsum dolor sit amet consectetur.",
   },
   {
     image: "blog4.png",
     date: Date.now(),
     comment: "246 comments",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Lorem ipsum dolor sit amet consectetur.",
   },
 ];

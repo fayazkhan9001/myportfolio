@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CarouselTestimonail = () => {
+const CarouselTestimonial = () => {
   var settings = {
     dots: true,
     infinite: true,
@@ -16,7 +16,7 @@ const CarouselTestimonail = () => {
     <div className="w-full md:w-3/4 m-auto mt-4">
       <Slider {...settings}>
         {data.map((d, i) => (
-          <div>
+          <div key={i}>
             <p>{d.quote}</p>
             <h1 className="py-2 text-lg font-semibold">{d.author}</h1>
             <p className="pb-4">{d.designation}</p>
@@ -27,7 +27,7 @@ const CarouselTestimonail = () => {
   );
 };
 
-export default CarouselTestimonail;
+export default CarouselTestimonial;
 
 const data = [
   {
