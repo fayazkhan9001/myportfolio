@@ -5,9 +5,9 @@ import { TiDeviceLaptop } from "react-icons/ti";
 import { FaPencilAlt } from "react-icons/fa";
 const Content = () => {
   return (
-    <div className="content">
-      <div className="block text-center md:text-start md:flex justify-between items-center contentParent my-10 py-20 lg:max-w-4xl lg:mx-auto md:max-full">
-        <div className="w-full md:w-[40%]">
+    <div className="">
+      <div className="resContainer mt-4 md:mt-[10rem] lg:flex items-center justify-between">
+        <div className="">
           <h1 className="text-2xl font-bold py-4">Work Process</h1>
           <p className="text-sm text-lightGrey">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis,
@@ -21,7 +21,7 @@ const Content = () => {
           </p>
         </div>
 
-        <div className="contentCardParent w-full md:w-[50%] block md:flex ">
+        <div className="contentCardParent block sm:flex mt-5 ">
           <div className="cardWrapper mt-8">
             <div className="card mb-4">
               <div className="cardIcon">

@@ -4,8 +4,8 @@ import { FiMenu } from "react-icons/fi";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="border-b border-gray-300 py-2">
-      <div className="flex items-center justify-between lg:max-w-4xl lg:mx-auto md:max-full  flex-wrap w-full">
+    <header className="resContainer border-b border-gray-300 py-2">
+      <div className="flex items-center justify-between">
         <div className="flex items-center">
           <span className="flex items-center justify-center w-8 h-8 bg-primary rounded-full text-white font-bold">
             F

@@ -10,14 +10,16 @@ import fayazimg from "../assets/images/fayazimg.jpg";
 
 const HeroCard = () => {
   return (
-    <div className="block md:flex justify-between max-w-3xl mx-auto border left-[20%] bottom-[-50px] p-10 bg-white rounded-md shadow-md  ">
-      <div className="w-[100%] md:w-[30%]  relative ">
+    <div className="block md:flex justify-between max-w-3xl mx-auto border p-3 gap-x-5 bg-white rounded-md shadow-md md:absolute ">
+      <div className=" ">
         <img
           className="w-[100%] mx-auto md:mx-0  md:h-[230px] rounded-md  "
           src={fayazimg}
           alt=""
         />
-        <SocialLink />
+        <div className="relative flex justify-center top-5">
+          <SocialLink />
+        </div>
       </div>
       <div className="w-[100%] my-6 md:w-[60%] md:my-6 mt-10 md:mt-0 ">
         <h1 className="text-xl font-bold">
@@ -64,7 +66,7 @@ const SocialLink = () => {
     },
   ];
   return (
-    <div className="absolute bottom-[-8%] left-[25%]  md:bottom-[4%] md:left-[8%]  bg-white shadow-md rounded-sm ">
+    <div className="absolute bottom-0  bg-white shadow-md rounded-sm ">
       <div className="flex gap-3 p-2 text-primary">
         {links.map((link, idx) => (
           <div

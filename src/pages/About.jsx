@@ -1,13 +1,7 @@
 import React from "react";
 
-import Carousel from "../SliderComponents/Carousel";
-
 const About = () => {
-  return (
-    <div>
-      <Carousel />
-    </div>
-  );
+  return <div>About</div>;
 };
 
 export default About;

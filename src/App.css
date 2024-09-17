@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+.resContainer {
+  width: 1400px;
+  max-width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .resContainer {
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
 :root {
   --primary-color: #a53dff;
   --secondary-color: #edd8ff;

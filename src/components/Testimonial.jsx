@@ -24,8 +24,8 @@ const Clients = () => {
     },
   ];
   return (
-    <div className="py-10 relative">
-      <div className="lg:max-w-4xl mx-auto md:w-full h-[1700px] md:h-[1100px]">
+    <div className="resContainer pt-3 sm:py-10 pb-34 relative">
+      <div className="lg:max-w-4xl mx-auto">
         <div className="text-center relative ">
           <h1 className="text-2xl font-bold">Happy Clients</h1>
           <p className="py-4 text-sm text-lightGrey">
@@ -44,7 +44,6 @@ const Clients = () => {
           </ul>
         </div>
         <Testimonial />
-        <ContactForm />
       </div>
     </div>
   );
@@ -55,7 +54,7 @@ export default Clients;
 const Testimonial = () => {
   return (
     <div>
-      <div className="text-center py-8 ">
+      <div className="text-center pt-8 pb-10 ">
         <h1 className="text-2xl font-bold">Testimonial</h1>
         <p className="py-6 text-sm text-lightGrey">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,

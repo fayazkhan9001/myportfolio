@@ -8,10 +8,11 @@ import Blog from "../components/Blog";
 import UserInfo from "../components/UserInfo";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   return (
-    <div className="bg-gray-100 border-2 ">
+    <div>
       <Header />
       <HeroSection />
       <Content />
@@ -20,6 +21,7 @@ const Home = () => {
       <Blog />
       <UserInfo />
       <Testimonial />
+      <ContactForm />
       <Footer />
     </div>
   );

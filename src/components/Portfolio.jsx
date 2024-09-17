@@ -50,7 +50,7 @@ const Portfolio = () => {
             fugiat enim similique <br /> necessitatibus dignissimos aspernatur.
           </p>
         </div>
-        <div className="cardWrapper block md:flex md:flex-wrap md:justify-center md:items-center">
+        <div className="cardWrapper block md:flex md:flex-wrap md:justify-center md:items-center space-x-2 box-border">
           {cardArray.map((card, idx) => (
             <Card card={card} key={idx} />
           ))}
@@ -71,7 +71,7 @@ export default Portfolio;
 const Card = ({ card }) => {
   return (
     <div>
-      <div className="w-[298px] mx-auto border-[1px] rounded-md mt-4 ">
+      <div className="w-[280px] mx-auto border-[1px] rounded-md mt-4 ">
         <div className="cardImg">
           <img src={card.image} alt="" />
         </div>

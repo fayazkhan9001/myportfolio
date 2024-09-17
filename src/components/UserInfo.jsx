@@ -20,8 +20,8 @@ const UserInfo = () => {
   ];
   return (
     <div className="bg-white">
-      <div className="block md:flex justify-between items-center lg:max-w-4xl lg:mx-auto md:max-full py-12">
-        <div className="w-full md:w-[40%] text-center md:text-start p-4">
+      <div className="resContainer block md:flex justify-between items-center md:py-12">
+        <div className="w-full  text-center md:text-start p-4">
           <h1 className="text-2xl font-bold">What i do?</h1>
           <p className="text-sm text-lightGrey py-5">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -37,11 +37,11 @@ const UserInfo = () => {
             Say Hello!
           </button>
         </div>
-        <div className="w-full md:w-[50%]">
+        <div className="w-full">
           {infoCardArray.map((card, idx) => (
             <div
               key={idx}
-              className="border-primary m-4 hover:border-l-2 bg-white rounded-md p-4 cursor-pointer"
+              className="border-primary m-4 hover:border-l-2 bg-white rounded-md md:p-4 cursor-pointer"
             >
               <h1 className="text-lg font-semibold">{card.title}</h1>
               <p className="text-sm text-lightGrey pt-2">{card.description}</p>
